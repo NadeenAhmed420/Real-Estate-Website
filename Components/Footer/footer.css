@@ -1,0 +1,22 @@
+.footer-content span {
+  max-width: 250px;
+}
+.footer-menu a {
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-content div:first-child {
+    justify-content: center !important;
+    align-items: center;
+    gap: 30px;
+  }
+  .info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}

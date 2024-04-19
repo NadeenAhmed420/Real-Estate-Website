@@ -1,0 +1,48 @@
+.mode {
+  width: 16rem;
+  border: 1px solid rgb(128, 128, 128, 0.143);
+  border-radius: 5px;
+  padding: 1rem;
+  transition: all 0.3s ease-in;
+}
+.mode:hover {
+  scale: 1.1;
+  box-shadow: var(--shadow);
+}
+
+.mode button {
+  background-color: var(--lightBlue) !important;
+  color: var(--blue) !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+  padding-block: 0.8rem;
+  transition: all 0.3s ease-in;
+}
+.mode button:hover {
+  scale: 0.8;
+  background: var(--blue-gradient);
+  color: white !important;
+  font-size: 1rem;
+}
+@media (max-width: 1199px) {
+  .mode {
+    width: 100%;
+  }
+  .contact .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .image {
+    height: 25rem !important;
+  }
+}
+@media (max-width: 991px) {
+  .row > div {
+    display: block;
+  }
+}

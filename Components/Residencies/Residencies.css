@@ -1,0 +1,67 @@
+.Res-card {
+  max-width: max-content;
+  margin: auto;
+  border-radius: 10px;
+}
+.Res-card:hover {
+  scale: 1.025;
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255, 0) 0%,
+    rgb(136, 160, 255, 0.46) 217.91%
+  );
+  box-shadow: 0px 72px 49px -51px rgb(136, 160, 255, 0.21);
+}
+.swiper-horizontal {
+  overflow: visible !important;
+}
+.Res-card > img {
+  width: 100%;
+  max-width: 15rem;
+  transition: all 0.3a ease-in;
+}
+.Res-card > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Res-card > :nth-child(3) {
+  font-size: 1.5rem;
+}
+.Res-card > :nth-child(4) {
+  font-size: 0.7rem;
+  width: 15rem;
+}
+
+/* Buttons of card swiper */
+.card-buttons {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+}
+.card-buttons button {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.card-buttons > :nth-child(1) {
+  background-color: #eeeeee;
+}
+.card-buttons > :nth-child(2) {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width:640px) {
+  .Res-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-buttons{
+    position: initial;
+    justify-content: center;
+  }
+}
